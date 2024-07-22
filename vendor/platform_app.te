@@ -64,6 +64,7 @@ allow platform_app hal_tidaservice_hwservice:hwservice_manager find;
 allow platform_app hal_tidaservice_default:binder { call transfer };
 allow platform_app hal_tidaservice_default:fd *;
 get_prop(platform_app, vendor_fp_prop)
+get_prop(platform_app, vendor_payment_security_prop)
 
 # Soter
 hal_client_domain(platform_app, vendor_hal_soter);
